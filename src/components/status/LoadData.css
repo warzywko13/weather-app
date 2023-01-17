@@ -1,0 +1,9 @@
+.load-message {
+  margin: 1rem;
+  color: black;
+  padding: 1rem;
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+}

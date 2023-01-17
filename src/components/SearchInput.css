@@ -1,0 +1,8 @@
+.weather-list__input {
+  width: 80%;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  padding: 15px;
+  font-size: 20px;
+}

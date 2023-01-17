@@ -1,0 +1,53 @@
+.add-edit-weather {
+  width: 80%;
+  margin: auto;
+}
+
+.add-edit-weather h1 {
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+}
+
+.add-edit-weather label {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.add-edit-weather__input {
+  padding: 10px;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.add-edit-weather__submit {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  transition: 0.2 all;
+  box-shadow: 0 0 5px #000;
+  background: #5767aa;
+  color: #fff;
+}
+
+.add-edit-weather__submit:hover {
+  background: #576ae2;
+  box-shadow: 0 0 5px #000;
+}
+
+.add-edit-weather__required {
+  color: red;
+}
+
+.add-edit-weather__input-error {
+  color: red;
+  text-decoration: center;
+  display: block;
+  width: 100%;
+}

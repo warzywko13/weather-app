@@ -1,0 +1,21 @@
+.weather-list__table tbody tr:nth-child(odd) {
+  background: #576ae2;
+}
+
+.weather-list__table-btn {
+  text-decoration: none;
+  color: #000;
+  font-size: 35px;
+  width: 100%;
+  display: flex;
+  background: transparent;
+  border: none;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-edit:hover,
+.btn-remove:hover {
+  color: #000;
+}

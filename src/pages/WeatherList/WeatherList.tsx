@@ -31,7 +31,6 @@ const WeatherList: React.FC = () => {
         if (status !== 200) {
           setIsLoading(false);
           setErrorLoading("Error when getting data");
-
           return;
         }
 
@@ -74,10 +73,11 @@ const WeatherList: React.FC = () => {
               setWeatherFilterList={setWeatherFilterList}
             />
             <List
-              weatherList={weatherFilterList}
-              setWeatherList={setWeatherFilterList}
+              weatherFilterList={weatherFilterList}
+              setWeatherFilterList={setWeatherFilterList}
               setIsLoading={setIsLoading}
               getWeatherList={getWeatherList}
+              setErrorLoading={setErrorLoading}
             />
           </div>
         </div>

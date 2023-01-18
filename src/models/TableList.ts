@@ -1,8 +1,9 @@
 import { WeatherReport } from "./WeatherReport";
 
 export interface TableList {
-  weatherList: WeatherReport[];
-  setWeatherList: React.Dispatch<React.SetStateAction<WeatherReport[]>>;
+  weatherFilterList: WeatherReport[];
+  setWeatherFilterList: React.Dispatch<React.SetStateAction<WeatherReport[]>>;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
   getWeatherList: () => Promise<void>;
+  setErrorLoading: React.Dispatch<React.SetStateAction<string>>;
 }

@@ -2,6 +2,9 @@ import React from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+/* Components */
+import ErrorData from "../ErrorData/ErrorData";
+
 /* Utils */
 import UnitConvert from "../../utils/UnitConvert";
 
@@ -22,6 +25,7 @@ const ListItem: React.FC<WeatherListFunctions> = ({
   city,
   setIsLoading,
   getWeatherList,
+  setErrorLoading,
 }) => {
   const nav = useNavigate();
 
@@ -30,16 +34,19 @@ const ListItem: React.FC<WeatherListFunctions> = ({
       await axios
         .delete(`http://localhost:8000/api/reports/${id}`)
         .then(({ data, status }) => {
-          if (status === 200) {
-            console.log(data);
+          if (status !== 200) {
             setIsLoading(false);
-            getWeatherList();
-          } else {
-            console.log(data);
+            setErrorLoading("Error when deleting data");
+            return;
           }
+
+          setErrorLoading("");
+          setIsLoading(false);
+          getWeatherList();
         })
         .catch((response) => {
-          console.log(response);
+          setIsLoading(false);
+          setErrorLoading(response.message);
         });
     }
   };

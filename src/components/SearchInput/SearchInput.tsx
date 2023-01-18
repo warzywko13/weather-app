@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 /* Models TS */
-import { TableInputSearch } from "../models/TableInputSearch";
+import { TableInputSearch } from "../../models/TableInputSearch";
 
 /* Styles */
 import "./SearchInput.css";

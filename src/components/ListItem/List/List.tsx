@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
 /* Components */
-import ListItem from "./ListItem";
+import ListItem from "../ListItem";
 
 /* Icons */
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 
 /* Models TS */
-import { TableList } from "../models/TableList";
-import { WeatherReport } from "../models/WeatherReport";
-import { SortOrder } from "../models/SortOrder";
+import { TableList } from "../../../models/TableList";
+import { WeatherReport } from "../../../models/WeatherReport";
+import { SortOrder } from "../../../models/SortOrder";
 
 /* Constans */
-import { sortTable } from "../data/constant";
-import { header } from "../data/constant";
+import { sortTable } from "../../../data/constant";
+import { header } from "../../../data/constant";
 
 const List: React.FC<TableList> = ({
   weatherList,

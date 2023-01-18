@@ -3,14 +3,14 @@ import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 
 /* Components */
-import LoadData from "../components/status/LoadData";
-import ErrorData from "../components/status/ErrorData";
+import LoadData from "../../components/LoadData/LoadData";
+import ErrorData from "../../components/ErrorData/ErrorData";
 
 /* Models TS */
-import { TemperatureUnit } from "../models/TemperatureUnit";
+import { TemperatureUnit } from "../../models/TemperatureUnit";
 
 /* Constants */
-import { options, currentDate } from "../data/constant";
+import { options, currentDate } from "../../data/constant";
 
 /* Style */
 import "./AddEditWeather.css";

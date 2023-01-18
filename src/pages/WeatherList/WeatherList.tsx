@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 /* Components */
-import List from "../components/List";
-import SearchInput from "../components/SearchInput";
-import LoadData from "../components/status/LoadData";
-import ErrorData from "../components/status/ErrorData";
+import List from "../../components/ListItem/List/List";
+import SearchInput from "../../components/SearchInput/SearchInput";
+import LoadData from "../../components/LoadData/LoadData";
+import ErrorData from "../../components/ErrorData/ErrorData";
 
 /* TS Models */
-import { WeatherReport } from "../models/WeatherReport";
+import { WeatherReport } from "../../models/WeatherReport";
 
 /* Styles */
 import "./WeatherList.css";

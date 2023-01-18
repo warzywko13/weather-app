@@ -1,7 +1,7 @@
 import React from "react";
 
 /* Components */
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Router from "./routers/Router";
 
 /* Style */

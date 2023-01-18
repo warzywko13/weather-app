@@ -3,10 +3,10 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 /* Utils */
-import UnitConvert from "../utils/UnitConvert";
+import UnitConvert from "../../utils/UnitConvert";
 
 /* Models TS */
-import { WeatherListFunctions } from "../models/WeatherListFunctions";
+import { WeatherListFunctions } from "../../models/WeatherListFunctions";
 
 /* Icons */
 import { AiOutlineEdit, AiOutlineDelete } from "react-icons/ai";
